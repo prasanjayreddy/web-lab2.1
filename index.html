@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Activity-2</title>
+
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <h1>Registration Form - by prasanjay(19BBS0093)</h1>
+    <div>
+        <form id="myform">
+            Name : <input type="text" placeholder="Enter your name"><br>
+            Registration No : <input type="text" placeholder="Ex: 19BBS0093"><br>
+            Date of Birth : <input type="date"><br>
+            Program : 
+            <select>
+                <option value="0">computer science</option>
+                <option value="1">Information technology</option>
+                <option value="2">Mechanical</option>
+                <option value="3">Electrical</option>
+                <option value="4">Electronics</option>
+            </select><br>
+            E-mail : <input type="email" id="mail" placeholder="name@example.com"><br><br>
+            <fieldset>
+                <legend>Address(Temporary): </legend>
+                State : <input type="text"><br>
+                District : <input type="text"><br>
+                Pincode : <input type="number"><br>
+            </fieldset><br><br>
+            <input type="checkbox" id="same"><label for="same">same as temporary address</label><br><br>
+            <fieldset>
+                <legend>Address(Permanent): </legend>
+                State : <input type="text"><br>
+                District : <input type="text"><br>
+                Pincode : <input type="number"><br>
+            </fieldset><br><br>
+            Gender : <input type="radio" id="male" name="gender"><label for="male">Male</label> 
+            <input type="radio" id="fmale" name="gender"><label for="fmale">Female</label><br>
+            Phone : <input type="number" id="phone"><br>
+            Password : <input type="text" id="SetPass"><br>
+            retype-password : <input type="text" id="RetypePassword"><br>
+            <button class="btn btn-lg" onclick="login()">submit</button>
+        </form>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
